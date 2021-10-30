@@ -20,6 +20,8 @@ const NavBar = () => {
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#service">Service</Nav.Link>
+                            <Nav.Link as={Link} to="/addService">AddService</Nav.Link>
+                            <Nav.Link as={Link} to="/myOrder">my-order</Nav.Link>
                             {
                                 user.email ? <Navbar.Text>
                                     Signed in as: {user.displayName}

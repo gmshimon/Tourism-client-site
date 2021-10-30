@@ -37,6 +37,7 @@ const Booking = () => {
 
     const onSubmit = data => {
         data.order = service;
+        data.status = 'pending';
         console.log(data);
         fetch('http://localhost:5000/booking', {
             method: 'POST',

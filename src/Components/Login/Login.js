@@ -14,7 +14,7 @@ const Login = () => {
         signUpWithGoogle()
             .then(result => {
                 setUser(result.user)
-                console.log('inside login page', result.user);
+                // console.log('inside login page', result.user);
                 history.push(login_url);
             })
             .finally(() => setIsLoading(false))

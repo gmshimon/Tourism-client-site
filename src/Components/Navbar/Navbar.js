@@ -22,6 +22,7 @@ const NavBar = () => {
                             <Nav.Link as={HashLink} to="/home#service">Service</Nav.Link>
                             <Nav.Link as={Link} to="/addService">AddService</Nav.Link>
                             <Nav.Link as={Link} to="/myOrder">my-order</Nav.Link>
+                            <Nav.Link as={Link} to="/manage-order">Manage-order</Nav.Link>
                             {
                                 user.email ? <Navbar.Text>
                                     Signed in as: {user.displayName}

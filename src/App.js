@@ -9,6 +9,7 @@ import AddService from './Components/AddService/AddService';
 import ReviewService from './Components/ReviewService/ReviewService';
 import Booking from './Components/Booking/Booking';
 import MyOrder from './Components/MyOrder/MyOrder';
+import ManageOrder from './Components/Manage_order/ManageOrder';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/myOrder'>
             <MyOrder></MyOrder>
+          </PrivateRoute>
+          <PrivateRoute path='/manage-order'>
+            <ManageOrder></ManageOrder>
           </PrivateRoute>
           <PrivateRoute path='/review/:id'>
             <ReviewService></ReviewService>

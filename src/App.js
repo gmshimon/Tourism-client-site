@@ -1,6 +1,8 @@
-import {BrowserRouter, Route, Router, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home';
+import Login from './Components/Login/Login';
 import NavBar from './Components/Navbar/Navbar';
 
 function App() {
@@ -14,6 +16,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
           </Route>
         </Switch>
       </BrowserRouter>

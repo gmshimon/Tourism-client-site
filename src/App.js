@@ -12,6 +12,7 @@ import ManageOrder from './Components/Manage_order/ManageOrder';
 import MyOrder from './Components/MyOrder/MyOrder';
 import Footer from './Components/Footer/Footer';
 import Subscription from './Components/Subscription/Subscription';
+import Award from './Components/Award/Award';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Booking></Booking>
           </PrivateRoute>
         </Switch>
+        <Award></Award>
         <Subscription></Subscription>
         <Footer></Footer>
       </BrowserRouter>

@@ -1,0 +1,14 @@
+.award-container{
+    background-color:lightgray;
+    margin-top:30px;
+    padding: 40px;
+    border-radius:5px;
+}
+
+.image{
+    border-radius: 8px;
+    padding: 0;
+    max-width: 450px;
+    /* width: 100%; */
+    margin: 0 10px;
+}

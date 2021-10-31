@@ -38,7 +38,7 @@ const ManageOrder = () => {
         const orderModify = {...order};
         orderModify.status = statusChange;
         // console.log(orderModify);
-        const url = `http://localhost:5000/booking/${id}`;
+        const url = `https://still-taiga-60761.herokuapp.com/booking/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

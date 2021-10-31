@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://still-taiga-60761.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => {
                 setOrders(data);
@@ -16,7 +16,7 @@ const ManageOrder = () => {
         console.log(id);
         const proceed = window.confirm('Are you sure you want to delete');
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://still-taiga-60761.herokuapp.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })

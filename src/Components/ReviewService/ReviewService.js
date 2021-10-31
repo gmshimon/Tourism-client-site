@@ -9,7 +9,7 @@ const ReviewService = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://still-taiga-60761.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -30,7 +30,7 @@ const ReviewService = () => {
     const {_id, tourName, price, image, description} = service
     return (
         <div>
-            <h1>id:{id}</h1>
+
             <Card className="mx-auto" style={{width: '18rem'}}>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>

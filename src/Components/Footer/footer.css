@@ -1,0 +1,14 @@
+.footer-container{
+    background-color:blue;
+    color: white;
+}
+.footer{
+     display: flex;
+    justify-content: space-evenly; 
+    
+}
+.footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}

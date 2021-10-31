@@ -8,12 +8,14 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import AddService from './Components/AddService/AddService';
 import ReviewService from './Components/ReviewService/ReviewService';
 import Booking from './Components/Booking/Booking';
-import MyOrder from './Components/MyOrder/MyOrder';
 import ManageOrder from './Components/Manage_order/ManageOrder';
+import MyOrder from './Components/MyOrder/MyOrder';
+import Footer from './Components/Footer/Footer';
+import Subscription from './Components/Subscription/Subscription';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <BrowserRouter>
         <NavBar></NavBar>
         <Switch>
@@ -42,8 +44,10 @@ function App() {
             <Booking></Booking>
           </PrivateRoute>
         </Switch>
+        <Subscription></Subscription>
+        <Footer></Footer>
       </BrowserRouter>
-    </div>
+    </div >
   );
 }
 

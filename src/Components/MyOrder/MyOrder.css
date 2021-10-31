@@ -1,0 +1,23 @@
+.user-details{
+    border: 1px solid gray;
+    height:180px;
+    margin: 0 50px;
+    padding:20px 50px;
+    margin-bottom:20px;
+}
+.order-details{
+    border: 1px solid gray;
+    margin: 0 50px;
+    padding:20px 50px;
+    margin-bottom:20px;
+}
+.order-details> h3{
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align:center;
+}
+.order{
+    border-bottom: 1px solid gray;
+    padding-bottom:10px
+}

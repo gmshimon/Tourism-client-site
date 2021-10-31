@@ -23,7 +23,7 @@ const Login = () => {
     return (
         <div>
             <h1>Please Login</h1>
-            <button onClick={handleGoogleSignUp}>Google sign up</button>
+            <button className="btn btn-primary" onClick={handleGoogleSignUp}><i className="fab fa-google-plus-g"></i> Google sign up</button>
         </div>
     );
 };

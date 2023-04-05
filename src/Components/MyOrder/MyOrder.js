@@ -9,7 +9,7 @@ const MyOrder = () => {
     // console.log(user);
     //loading all order 
     useEffect(() => {
-        fetch('https://still-taiga-60761.herokuapp.com/booking')
+        fetch('http://localhost:5000/booking')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -18,12 +18,13 @@ const MyOrder = () => {
         console.log(id);
         const proceed = window.confirm('Are you sure you want to delete');
         if (proceed) {
-            const url = `https://still-taiga-60761.herokuapp.com/booking/${id}`;
+            const url = `http://localhost:5000/booking/${id}`;
             fetch(url, {
-                method: 'DELETE',
+                method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
+                    console.log(data)
                     if (data.deletedCount > 0) {
                         alert('Deleted successfully');
                         const remainingOrder = orders.filter(order => order._id !== id);

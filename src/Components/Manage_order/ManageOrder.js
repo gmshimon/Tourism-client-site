@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('https://still-taiga-60761.herokuapp.com/booking')
+        fetch('http://localhost:5000/booking')
             .then(res => res.json())
             .then(data => {
                 setOrders(data);

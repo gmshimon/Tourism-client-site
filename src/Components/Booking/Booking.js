@@ -16,7 +16,7 @@ const Booking = () => {
 
 
     useEffect(() => {
-        fetch('https://still-taiga-60761.herokuapp.com/services')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -39,7 +39,7 @@ const Booking = () => {
         data.order = service;
         data.status = 'pending';
         console.log(data);
-        fetch('https://still-taiga-60761.herokuapp.com/booking', {
+        fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -58,7 +58,6 @@ const Booking = () => {
     return (
         <div>
             <h1>Booking</h1>
-            <p>Package id: {id}</p>
             <div className="mx-auto">
                 <form className="admission-form" onSubmit={handleSubmit(onSubmit)}>
                     <input defaultValue={user.displayName} {...register("name")} />

@@ -19,7 +19,7 @@ const AddService = () => {
         const newService = {tourName, price, image, description}
         console.log(newService);
 
-        fetch('https://still-taiga-60761.herokuapp.com/services', {
+        fetch('http://localhost:5000/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

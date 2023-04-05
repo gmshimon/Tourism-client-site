@@ -41,7 +41,7 @@ const ReviewService = () => {
                 </Card.Body>
                 <ListGroup className="list-group-flush">
 
-                    <ListGroupItem>price:'$'{price}</ListGroupItem>
+                    <ListGroupItem>price:${price}</ListGroupItem>
                     <ListGroupItem>
                         <Link to={`/booking/${_id}`}>
                             <Button variant="primary">Booking</Button>

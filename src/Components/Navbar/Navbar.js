@@ -24,8 +24,8 @@ const NavBar = () => {
                             <Nav.Link as={Link} to="/myOrder">my-order</Nav.Link>
                             <Nav.Link as={Link} to="/manage-order">Manage-order</Nav.Link>
                             {
-                                user.email ? <Navbar.Text>
-                                    Signed in as: {user.displayName}
+                                user.email ? <Navbar.Text className="ms-4 ">
+                                     {user.displayName}
                                     <button className="ms-2" onClick={handleLogout}>Log out</button>
                                 </Navbar.Text>
                                     :

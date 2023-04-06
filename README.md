@@ -1,1 +1,1 @@
-live site: https://github.com/gmshimon/Tourism-client-site
+live site: https://fabulous-jelly-799d66.netlify.app/

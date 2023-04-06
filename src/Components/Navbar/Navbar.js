@@ -12,7 +12,7 @@ const NavBar = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" className="mb-2" sticky="top">
+            <Navbar collapseOnSelect bg="dark" variant="dark" expand="lg" className="" sticky="top">
                 <Container>
                     <Navbar.Brand as={Link} to='/home'>Travel with us</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

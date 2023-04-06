@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://tourism-ovr3.onrender.com/booking')
             .then(res => res.json())
             .then(data => {
                 setOrders(data);
@@ -16,7 +16,7 @@ const ManageOrder = () => {
         console.log(id);
         const proceed = window.confirm('Are you sure you want to delete');
         if (proceed) {
-            const url = `https://still-taiga-60761.herokuapp.com/booking/${id}`;
+            const url = `https://tourism-ovr3.onrender.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE',
             })
@@ -38,7 +38,7 @@ const ManageOrder = () => {
         const orderModify = {...order};
         orderModify.status = statusChange;
         // console.log(orderModify);
-        const url = `https://still-taiga-60761.herokuapp.com/booking/${id}`;
+        const url = `https://tourism-ovr3.onrender.com/booking/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

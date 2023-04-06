@@ -9,7 +9,7 @@ const MyOrder = () => {
     // console.log(user);
     //loading all order 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://tourism-ovr3.onrender.com/booking')
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -18,7 +18,7 @@ const MyOrder = () => {
         console.log(id);
         const proceed = window.confirm('Are you sure you want to delete');
         if (proceed) {
-            const url = `http://localhost:5000/booking/${id}`;
+            const url = `https://tourism-ovr3.onrender.com/booking/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

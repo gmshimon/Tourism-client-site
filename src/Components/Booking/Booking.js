@@ -16,7 +16,7 @@ const Booking = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://tourism-ovr3.onrender.com/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
@@ -39,7 +39,7 @@ const Booking = () => {
         data.order = service;
         data.status = 'pending';
         console.log(data);
-        fetch('http://localhost:5000/booking', {
+        fetch('https://tourism-ovr3.onrender.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

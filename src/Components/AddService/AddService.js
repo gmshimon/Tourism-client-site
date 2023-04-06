@@ -19,7 +19,7 @@ const AddService = () => {
         const newService = {tourName, price, image, description}
         console.log(newService);
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://tourism-ovr3.onrender.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
